@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services - NEWDAY Medical Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-primary">NEWDAY</span>
+                    <span class="logo-secondary">Medical Center</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html" class="active">Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="appointments.html" class="btn btn-primary">Book Appointment</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointments.html" class="btn btn-primary mobile-btn">Book Appointment</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Our Medical Services</h1>
+                <p>Comprehensive healthcare services tailored to meet your individual needs.</p>
+            </div>
+        </section>
+
+        <section class="services-tabs">
+            <div class="container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-category="all">All Services</button>
+                    <button class="tab-btn" data-category="general">General Care</button>
+                    <button class="tab-btn" data-category="specialized">Specialized Care</button>
+                    <button class="tab-btn" data-category="diagnostics">Diagnostics</button>
+                    <button class="tab-btn" data-category="rehabilitation">Rehabilitation</button>
+                </div>
+
+                <div class="services-list">
+                    <div class="service-detail" id="primary-care" data-category="general">
+                        <h2>Primary Care</h2>
+                        <p class="price">$120 - $200</p>
+                        <p>Our primary care services focus on maintaining your overall health and well-being. We provide routine check-ups, preventive screenings, immunizations, and management of chronic conditions. Our primary care physicians build long-term relationships with patients to ensure continuity of care.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="specialized-consultations" data-category="specialized">
+                        <h2>Specialized Consultations</h2>
+                        <p class="price">$180 - $350</p>
+                        <p>Access specialized medical expertise through our network of board-certified specialists. We offer consultations in cardiology, dermatology, endocrinology, gastroenterology, neurology, orthopedics, and more. Our specialists work closely with your primary care physician to provide coordinated care.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="diagnostic-services" data-category="diagnostics">
+                        <h2>Diagnostic Services</h2>
+                        <p class="price">$150 - $1,200</p>
+                        <p>Our state-of-the-art diagnostic services include comprehensive laboratory testing, X-rays, ultrasounds, CT scans, MRIs, and other advanced imaging techniques. Quick and accurate diagnostics help our physicians make informed decisions about your treatment plan.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="preventive-care" data-category="general">
+                        <h2>Preventive Care</h2>
+                        <p class="price">$90 - $250</p>
+                        <p>Prevention is better than cure. Our preventive care services include regular health screenings, vaccinations, lifestyle counseling, and wellness programs designed to help you maintain optimal health and prevent disease before it starts.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="pediatric-care" data-category="specialized">
+                        <h2>Pediatric Care</h2>
+                        <p class="price">$110 - $220</p>
+                        <p>Our pediatric care services provide comprehensive healthcare for children from birth through adolescence. Our pediatricians are trained to address the unique physical, emotional, and developmental needs of growing children in a friendly, comforting environment.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="telemedicine" data-category="general">
+                        <h2>Telemedicine</h2>
+                        <p class="price">$75 - $150</p>
+                        <p>Access quality healthcare from the comfort of your home with our telemedicine services. Virtual consultations are available for many conditions and follow-ups, saving you time while ensuring you receive the care you need when in-person visits aren't necessary.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="womens-health" data-category="specialized">
+                        <h2>Women's Health</h2>
+                        <p class="price">$130 - $280</p>
+                        <p>Our women's health services address the unique healthcare needs of women at every stage of life. We offer gynecological exams, prenatal care, menopause management, osteoporosis screening, and other specialized services focused on women's wellness.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="mental-health" data-category="specialized">
+                        <h2>Mental Health Services</h2>
+                        <p class="price">$140 - $250</p>
+                        <p>Our mental health professionals provide compassionate care for a range of conditions including anxiety, depression, stress management, and more. We offer individual therapy, medication management, and holistic approaches to mental wellness.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+
+                    <div class="service-detail" id="physical-therapy" data-category="rehabilitation">
+                        <h2>Physical Therapy</h2>
+                        <p class="price">$100 - $180 per session</p>
+                        <p>Our physical therapy services help patients recover from injuries, surgeries, and manage chronic conditions. Our licensed therapists create personalized treatment plans to improve mobility, strength, and quality of life while reducing pain and preventing future injuries.</p>
+                        <a href="appointments.html" class="btn btn-primary">Book This Service</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="consultation-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Not Sure What You Need?</h2>
+                    <p>Schedule a consultation with one of our primary care physicians who can assess your needs and direct you to the appropriate services.</p>
+                    <div class="cta-buttons">
+                        <a href="appointments.html" class="btn btn-primary">Book a Consultation</a>
+                        <a href="contact.html" class="btn btn-outline">Contact Us</a>
+                    </div>
+                </div>
+                <div class="cta-image">
+                    <img src="https://placehold.co/600x400/e6f7ff/0099cc?text=Doctor+Consulting" alt="Doctor consulting with patient">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-primary">NEWDAY</span>
+                        <span class="logo-secondary">Medical Center</span>
+                    </a>
+                    <p>Providing quality healthcare for a better tomorrow.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> NEWDAY Medical Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

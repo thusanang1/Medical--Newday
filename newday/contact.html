@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - NEWDAY Medical Center</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+  <header class="header">
+      <div class="container">
+          <div class="logo">
+              <a href="index.html">
+                  <span class="logo-primary">NEWDAY</span>
+                  <span class="logo-secondary">Medical Center</span>
+              </a>
+          </div>
+          <nav class="main-nav">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="doctors.html">Our Doctors</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html" class="active">Contact</a></li>
+              </ul>
+          </nav>
+          <div class="header-actions">
+              <a href="appointments.html" class="btn btn-primary">Book Appointment</a>
+              <button class="mobile-menu-btn" id="mobileMenuBtn">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+              </button>
+          </div>
+      </div>
+      <div class="mobile-menu" id="mobileMenu">
+          <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="doctors.html">Our Doctors</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="appointments.html" class="btn btn-primary mobile-btn">Book Appointment</a></li>
+          </ul>
+      </div>
+  </header>
+
+  <main>
+      <section class="page-hero">
+          <div class="container">
+              <h1>Contact Us</h1>
+              <p>We're here to help. Reach out to us with any questions or concerns.</p>
+          </div>
+      </section>
+
+      <section class="contact-section">
+          <div class="container">
+              <div class="contact-grid">
+                  <div class="map-container float-on-hover">
+                      <h2>Our Location</h2>
+                      <div class="map">
+                          <!-- Replace this with an actual Google Maps embed in production -->
+                          <img src="https://placehold.co/800x500/e6f7ff/0099cc?text=Map+of+Poso+House,+Gaborone" alt="Map showing Poso House, Gaborone" class="grow-on-hover">
+                          
+                          <!-- Uncomment and replace YOUR_API_KEY with actual Google Maps API key -->
+                          <!--
+                          <iframe 
+                              src="https://www.bing.com/maps?q=newday+medical+center&FORM=HDRSC7&cp=-24.661386%7E25.904001&lvl=17.2#" 
+                              width="100%" 
+                              height="450" 
+                              style="border:0;" 
+                              allowfullscreen="" 
+                              loading="lazy" 
+                              referrerpolicy="no-referrer-when-downgrade">
+                          </iframe>
+                          -->
+                      </div>
+                      <div class="directions">
+                          <h3>Getting Here</h3>
+                          <p>We are conveniently located in Poso House in the heart of Gaborone, with easy access to public transportation and ample parking.</p>
+                          <a href="https://maps.google.com/?q=Poso+House,Gaborone,Botswana" target="_blank" class="btn btn-outline">Get Directions</a>
+                      </div>
+                  </div>
+                  
+                  <div class="contact-info-container">
+                      <div class="contact-info">
+                          <h2>Contact Information</h2>
+                          <div class="info-list">
+                              <div class="info-item float-on-hover">
+                                  <div class="info-icon">
+                                      <img src="https://placehold.co/40x40/e6f7ff/0099cc?text=📍" alt="Location">
+                                  </div>
+                                  <div class="info-content">
+                                      <h3>Address</h3>
+                                      <p>Poso House, Main Mall</p>
+                                      <p>Gaborone, Botswana</p>
+                                  </div>
+                              </div>
+                              
+                              <div class="info-item float-on-hover">
+                                  <div class="info-icon">
+                                      <img src="https://placehold.co/40x40/e6f7ff/0099cc?text=📞" alt="Phone">
+                                  </div>
+                                  <div class="info-content">
+                                      <h3>Phone</h3>
+                                      <p><a href="tel:+26771234567">+267 7123 4567</a></p>
+                                      <p><a href="tel:+26773987654">+267 7398 7654</a> (Emergency)</p>
+                                  </div>
+                              </div>
+                              
+                              <div class="info-item float-on-hover">
+                                  <div class="info-icon">
+                                      <img src="https://placehold.co/40x40/e6f7ff/0099cc?text=✉️" alt="Email">
+                                  </div>
+                                  <div class="info-content">
+                                      <h3>Email</h3>
+                                      <p><a href="mailto:info@newdaymedical.com">info@newdaymedical.com</a></p>
+                                      <p><a href="mailto:appointments@newdaymedical.com">appointments@newdaymedical.com</a></p>
+                                  </div>
+                              </div>
+                              
+                              <div class="info-item float-on-hover">
+                                  <div class="info-icon">
+                                      <img src="https://placehold.co/40x40/e6f7ff/0099cc?text=🕒" alt="Hours">
+                                  </div>
+                                  <div class="info-content">
+                                      <h3>Hours</h3>
+                                      <p>Monday - Friday: 8:00 AM - 6:00 PM</p>
+                                      <p>Saturday: 9:00 AM - 1:00 PM</p>
+                                      <p>Sunday: Closed (Emergency services available)</p>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      
+                      <div class="contact-form-container">
+                          <h2>Send Us a Message</h2>
+                          <form id="contactForm" class="contact-form">
+                              <div class="form-row">
+                                  <div class="form-group">
+                                      <label for="name">Full Name</label>
+                                      <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                                  </div>
+                              </div>
+                              
+                              <div class="form-row">
+                                  <div class="form-group">
+                                      <label for="phone">Phone Number</label>
+                                      <input type="tel" id="phone" name="phone" placeholder="(+267) 71234567">
+                                  </div>
+                                  <div class="form-group">
+                                      <label for="subject">Subject</label>
+                                      <select id="subject" name="subject" required>
+                                          <option value="" disabled selected>Select a subject</option>
+                                          <option value="appointment">Appointment Inquiry</option>
+                                          <option value="services">Services Information</option>
+                                          <option value="billing">Billing Question</option>
+                                          <option value="feedback">Feedback</option>
+                                          <option value="other">Other</option>
+                                      </select>
+                                  </div>
+                              </div>
+                              
+                              <div class="form-group">
+                                  <label for="message">Message</label>
+                                  <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+                              </div>
+                              
+                              <button type="submit" class="btn btn-primary btn-block pulse-on-hover">Send Message</button>
+                          </form>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+
+      <section class="faq-section">
+          <div class="container">
+              <h2>Frequently Asked Questions</h2>
+              <div class="faq-grid">
+                  <div class="faq-item grow-on-hover">
+                      <h3>What insurance plans do you accept?</h3>
+                      <p>We accept most major insurance plans including BPOMAS, Bomaid, and international insurance providers. Please contact our billing department for specific information about your plan.</p>
+                  </div>
+                  
+                  <div class="faq-item grow-on-hover">
+                      <h3>How do I schedule an appointment?</h3>
+                      <p>You can schedule an appointment by calling our office, using our online booking system, or visiting us in person. We recommend booking at least 24 hours in advance for non-emergency visits.</p>
+                  </div>
+                  
+                  <div class="faq-item grow-on-hover">
+                      <h3>What should I bring to my first appointment?</h3>
+                      <p>Please bring your ID, insurance card, a list of current medications, and any relevant medical records or test results. Arriving 15 minutes early will help with the registration process.</p>
+                  </div>
+                  
+                  <div class="faq-item grow-on-hover">
+                      <h3>Do you offer telemedicine services?</h3>
+                      <p>Yes, we offer virtual consultations for certain conditions and follow-up appointments. Please call our office to determine if your medical issue is appropriate for a telemedicine visit.</p>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </main>
+
+  <footer class="footer">
+      <div class="container">
+          <div class="footer-main">
+              <div class="footer-logo">
+                  <a href="index.html">
+                      <span class="logo-primary">NEWDAY</span>
+                      <span class="logo-secondary">Medical Center</span>
+                  </a>
+                  <p>Providing quality healthcare for a better tomorrow.</p>
+              </div>
+              <div class="footer-contact">
+                  <div class="contact-item">
+                      <img src="https://placehold.co/20x20/e6f7ff/0099cc?text=📍" alt="Location">
+                      <span>Poso House, Main Mall, Gaborone, Botswana</span>
+                  </div>
+                  <div class="contact-item">
+                      <img src="https://placehold.co/20x20/e6f7ff/0099cc?text=📞" alt="Phone">
+                      <span>+267 7123 4567</span>
+                  </div>
+              </div>
+              <div class="footer-links">
+                  <a href="#">Privacy Policy</a>
+                  <a href="#">Terms of Service</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>&copy; <span id="currentYear"></span> NEWDAY Medical Center. All rights reserved.</p>
+          </div>
+      </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Contact form submission
+    document.addEventListener('DOMContentLoaded', function() {
+        const contactForm = document.getElementById('contactForm');
+        
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // Basic form validation
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                if (!name || !email || !subject || !message) {
+                    // Shake the form on error
+                    contactForm.classList.add('shake-animation');
+                    setTimeout(() => {
+                        contactForm.classList.remove('shake-animation');
+                    }, 820);
+                    
+                    alert('Please fill in all required fields.');
+                    return;
+                }
+                
+                // Add loading animation to submit button
+                const submitBtn = contactForm.querySelector('button[type="submit"]');
+                const originalBtnText = submitBtn.innerHTML;
+                submitBtn.innerHTML = '<span class="loading-spinner"></span> Sending...';
+                submitBtn.disabled = true;
+                
+                // Simulate form submission (replace with actual form submission in production)
+                setTimeout(() => {
+                    // Show success message
+                    const formContainer = contactForm.parentElement;
+                    const successMessage = document.createElement('div');
+                    successMessage.className = 'success-message';
+                    successMessage.innerHTML = `
+                        <div class="success-icon">
+                            <img src="https://placehold.co/60x60/e6f7ff/0099cc?text=✓" alt="Success">
+                        </div>
+                        <h3>Message Sent Successfully!</h3>
+                        <p>Thank you for contacting us, ${name}. We'll get back to you as soon as possible.</p>
+                        <button class="btn btn-outline" id="sendAnotherBtn">Send Another Message</button>
+                    `;
+                    
+                    // Hide form and show success message
+                    contactForm.style.display = 'none';
+                    formContainer.appendChild(successMessage);
+                    
+                    // Add event listener to "Send Another Message" button
+                    document.getElementById('sendAnotherBtn').addEventListener('click', function() {
+                        contactForm.reset();
+                        contactForm.style.display = 'block';
+                        submitBtn.innerHTML = originalBtnText;
+                        submitBtn.disabled = false;
+                        successMessage.remove();
+                    });
+                    
+                }, 2000);
+            });
+        }
+    });
+  </script>
+</html>

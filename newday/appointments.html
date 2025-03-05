@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Appointment - NEWDAY Medical Center</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <span class="logo-primary">NEWDAY</span>
+                    <span class="logo-secondary">Medical Center</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="doctors.html">Our Doctors</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <a href="appointments.html" class="btn btn-primary active">Book Appointment</a>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="doctors.html">Our Doctors</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="appointments.html" class="btn btn-primary mobile-btn">Book Appointment</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <h1>Book Your Appointment</h1>
+                <p>Schedule a visit with our healthcare professionals quickly and easily.</p>
+            </div>
+        </section>
+
+        <section class="appointment-section">
+            <div class="container">
+                <div class="appointment-grid">
+                    <div class="appointment-form-container">
+                        <h2>Appointment Information</h2>
+                        <p>Fill out the form to schedule your appointment with one of our healthcare professionals.</p>
+                        
+                        <form id="appointmentForm" class="appointment-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Full Name</label>
+                                    <input type="text" id="name" name="name" placeholder="John Doe" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="phone">Phone Number</label>
+                                    <input type="tel" id="phone" name="phone" placeholder="(555) 123-4567" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="service">Service</label>
+                                    <select id="service" name="service" required>
+                                        <option value="" disabled selected>Select a service</option>
+                                        <option value="primary-care">Primary Care</option>
+                                        <option value="specialized-consultations">Specialized Consultations</option>
+                                        <option value="diagnostic-services">Diagnostic Services</option>
+                                        <option value="preventive-care">Preventive Care</option>
+                                        <option value="pediatric-care">Pediatric Care</option>
+                                        <option value="telemedicine">Telemedicine</option>
+                                        <option value="womens-health">Women's Health</option>
+                                        <option value="mental-health">Mental Health Services</option>
+                                        <option value="physical-therapy">Physical Therapy</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Appointment Date</label>
+                                    <input type="date" id="date" name="date" required>
+                                    <small>Our office is open Monday to Friday.</small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Appointment Time</label>
+                                    <select id="time" name="time" required>
+                                        <option value="" disabled selected>Select a time</option>
+                                        <option value="9:00 AM">9:00 AM</option>
+                                        <option value="9:30 AM">9:30 AM</option>
+                                        <option value="10:00 AM">10:00 AM</option>
+                                        <option value="10:30 AM">10:30 AM</option>
+                                        <option value="11:00 AM">11:00 AM</option>
+                                        <option value="11:30 AM">11:30 AM</option>
+                                        <option value="1:00 PM">1:00 PM</option>
+                                        <option value="1:30 PM">1:30 PM</option>
+                                        <option value="2:00 PM">2:00 PM</option>
+                                        <option value="2:30 PM">2:30 PM</option>
+                                        <option value="3:00 PM">3:00 PM</option>
+                                        <option value="3:30 PM">3:30 PM</option>
+                                        <option value="4:00 PM">4:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="doctor">Preferred Doctor (Optional)</label>
+                                <select id="doctor" name="doctor">
+                                    <option value="" selected>No preference</option>
+                                    <option value="dr-smith">Dr. Smith - General Medicine</option>
+                                    <option value="dr-johnson">Dr. Johnson - Pediatrics</option>
+                                    <option value="dr-williams">Dr. Williams - Cardiology</option>
+                                    <option value="dr-brown">Dr. Brown - Dermatology</option>
+                                    <option value="dr-davis">Dr. Davis - Neurology</option>
+                                    <option value="dr-miller">Dr. Miller - Orthopedics</option>
+                                    <option value="dr-wilson">Dr. Wilson - Gynecology</option>
+                                    <option value="dr-moore">Dr. Moore - Psychiatry</option>
+                                    <option value="dr-taylor">Dr. Taylor - Physical Therapy</option>
+                                </select>
+                                <small>Leave blank if you have no preference or need the earliest available appointment.</small>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="notes">Additional Notes</label>
+                                <textarea id="notes" name="notes" placeholder="Please share any specific concerns or information about your visit"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-block">Book Appointment</button>
+                        </form>
+                    </div>
+                    
+                    <div class="appointment-info">
+                        <h2>What to Expect</h2>
+                        <p>After booking your appointment, you'll receive a confirmation email with details about your visit. Our staff will also contact you to confirm your appointment and answer any questions you may have.</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <img src="https://placehold.co/30x30/e6f7ff/0099cc?text=✓" alt="Confirmation">
+                                <div>
+                                    <h3>Appointment Confirmation</h3>
+                                    <p>You'll receive an email confirmation immediately after booking.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <img src="https://placehold.co/30x30/e6f7ff/0099cc?text=⏰" alt="Reminder">
+                                <div>
+                                    <h3>Reminder Notifications</h3>
+                                    <p>We'll send you a reminder 24 hours before your scheduled appointment.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <img src="https://placehold.co/30x30/e6f7ff/0099cc?text=↻" alt="Reschedule">
+                                <div>
+                                    <h3>Flexible Rescheduling</h3>
+                                    <p>Need to reschedule? You can do so up to 24 hours before your appointment.</p>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <img src="https://placehold.co/30x30/e6f7ff/0099cc?text=🛡️" alt="Insurance">
+                                <div>
+                                    <h3>Insurance Verification</h3>
+                                    <p>We'll verify your insurance coverage before your visit.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="important-info">
+                            <h3>Important Information</h3>
+                            <ul>
+                                <li>Please arrive 15 minutes before your scheduled appointment time.</li>
+                                <li>Bring your insurance card and a valid photo ID.</li>
+                                <li>If this is your first visit, please bring a list of your current medications.</li>
+                                <li>Complete any pre-appointment paperwork sent to your email to save time.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-main">
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <span class="logo-primary">NEWDAY</span>
+                        <span class="logo-secondary">Medical Center</span>
+                    </a>
+                    <p>Providing quality healthcare for a better tomorrow.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear"></span> NEWDAY Medical Center. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
